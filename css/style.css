@@ -1,0 +1,135 @@
+/* global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+/* */
+body {
+    background: #f4f6f8;
+    color: #1f2937;
+    padding: 40px;
+    justify-content: center;
+}
+
+/* DASHBOARD WRAPPER */
+.dashboard {
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* SECTION TITLES */
+.dashboard h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* INPUT GROUP */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* OUTPUT PASSWORD BOX */
+.output-box {
+    margin-top: 20px;
+    padding: 16px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    word-break: break-all;
+}
+
+/* STRENGTH METER */
+.strength-meter {
+    margin-top: 16px;
+}
+
+.strength-meter span {
+    font-weight: 600;
+}
+
+.strength-bar {
+    height: 8px;
+    width: 100%;
+    background: #e5e7eb;
+    border-radius: 4px;
+    margin-top: 6px;
+    overflow: hidden;
+}
+
+.strength-fill {
+    height: 100%;
+    width: 0%;
+    background: #10b981;
+    transition: width 0.3s ease;
+}
+
+/* COPY STATUS */
+#copy-status {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #059669;
+    font-weight: 500;
+}
+
+/* ASSIGNED PASSWORD CARD */
+.assigned-card {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f3f4f6;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+.assigned-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#assigned-password {
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}

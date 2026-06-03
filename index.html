@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Password Generator V2</h1>
+
+    <main>
+        <!-- app wrapper -->
+        <section id="input-section">
+            <!-- input section 
+             adding the first text here (user interaction) -->
+
+            <div class="dashboard">
+
+                <h2>Password Generator</h2>
+
+                <div class="input-group">
+                    <label for="input-length">Password Length</label>
+                    <input type="number" id="input-length" min="1" max="100" placeholder="Input your desired length">
+                </div>
+
+                <button id="input-btn">Generate Password</button>
+
+                <!-- output section 
+                 hold the output after generation is complete -->
+                <div class="output-box" id="output-password">Your password will appear here</div>
+
+                <!-- check status -->
+                <div class="strength-meter">
+                    <span id="strength">Strength: -</span>
+                    <div class="strength-bar">
+                        <div class="strength-fill" id="strength-fill"></div>
+                    </div>
+                </div>
+
+                <!-- add a copy button -->
+                <button id="copy-btn">Copy to Clipboard</button>
+                <p id="copy-status"></p>
+
+                <!-- assigned password section -->
+                <div class="assigned-card">
+                    <h3>Assigned Password</h3>
+                    <p id="assigned-password">None</p>
+                </div>
+
+            </div>
+
+        </section> 
+    </main>
+
+    <script type="module" src="js/ui.js"></script>
+
+</body>
+</html>
