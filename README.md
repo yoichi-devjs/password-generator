@@ -1,46 +1,52 @@
-# PASSWORD GEN
-
-## Demo
-![App Demo](./assets/demo.png)
-showcasing an image of the file executed in node.js
+# PASSWORD GEN v2
 
 ## Description
-A simple random password generator built fully in Vanilla JavaScript.
-It showcases some of the JavaScript core concepts like functions and lopps generating customizable password ideas.
+An improved random password generator built in Vanilla JavaScript.  
+Version 2 introduces a structured UI, a dashboard for interaction, and expanded character options including numbers and symbols.
+
+## Version 2
+- Added UI styling and structured layout
+- Added an interactive dashboard for generating passwords
+- Added support for numbers and symbols
+- Improved overall user experience
+- Expanded from letters-only (v1) to full character sets
 
 ## Features
 - Generate strong, random passwords instantly
-- Password generated based on the length input
-- Customize password length
-- Include: both upper case and lower case letters
-- Exclude: numbers, symbols
+- Customizable password length
+- Choose to include:
+  - Uppercase letters
+  - Lowercase letters
+  - Numbers
+  - Symbols
+- Real-time generation through the dashboard interface
 
 ## Tech Used
 - Vanilla JavaScript
+- HTML
+- CSS
 
 ## How it Works
-- it has a pool of characters
-- both uppercase and lowercase characters
-- randomly picking from it (from both upper and lower case letters)
-- it repeats the process N times (num input when calling the function)
-- inputs a number that decides the length of the password
-- (as it's visible in my screenshot image, I firstly input the number 7 and had a password of 7 characters, then with then number 17, a password long 17 characters)
-- it combines the result into a string, returning a secure and unique password of the desired length
+- The generator builds a pool of characters based on user selections
+- Character sets include:
+  - Uppercase letters
+  - Lowercase letters
+  - Numbers
+  - Symbols
+- A random character is selected from the pool repeatedly until the desired length is reached
+- The result is combined into a final password string and displayed in the UI
 
 ## Learnings
-- Working with randomization in JavaScript
-- Handling user input (just through the code)
-- Writing cleaner and reusable functions
+- Building interactive UI components with JavaScript
+- Managing state through user selections
+- Improving code structure and readability
+- Expanding randomization logic to support multiple character types
 
 ## Future Improvements
 - Add password strength indicator
+- Add copy-to-clipboard functionality
 - Save previously generated passwords
-- Add numbers/symbols to it
-- Improve UI/UX
-
-## Disclaimer
-All of my projects are for learning purposes. 
-While it generates strong passwords, it should not be used for highly sensitive production environments without further security enhancements.
+- Add dark/light mode toggle
 
 ## Author
 Yoichi Isagi
